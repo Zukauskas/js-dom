@@ -12,6 +12,31 @@ body {
         sans-serif;
 }
 
+.homework {
+    text-align: center;
+}
+
+.homework > p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.exercises {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.exercises a {
+    text-decoration: none;
+    padding: 1em 0.5em;
+    border: 1px solid pink;
+    background-color: blanchedalmond;
+    color: darkolivegreen;
+}
+
 button {
     display: inline-block;
     padding: 0.5em;
