@@ -16,10 +16,44 @@ body {
     text-align: center;
 }
 
-.homework > p {
+.homework > .title {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 24px;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.complete,
+.notComplete {
+    position: relative;
+}
+
+.complete::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: green;
+    left: -20px;
+}
+
+.notComplete::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    left: -20px;
 }
 
 .exercises {
@@ -35,6 +69,16 @@ body {
     border: 1px solid pink;
     background-color: blanchedalmond;
     color: darkolivegreen;
+}
+
+.exercises a.done {
+    background-color: green;
+    color: white;
+}
+
+.exercises a.notdone {
+    background-color: red;
+    color: white;
 }
 
 button {
