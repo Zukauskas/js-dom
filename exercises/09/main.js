@@ -28,7 +28,7 @@ plusDOM.addEventListener('click', () => {
 resetDOM.addEventListener('click', () => {
     score = 0;
     resultDOM.textContent = score;
-    const reset = document.createElement('li');
+    const reset = document.createElement('li')
     reset.textContent = `Paspaudei reset ir dabartinis rezultatas yra [${score}].`;
     ulDOM.prepend(reset);
 })
